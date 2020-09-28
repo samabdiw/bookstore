@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <link href="favicon.png" rel="icon"> -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="My e-Book Library">
+    <title>My Library</title>
+</head>
+
+<body>
+    <main id="root">
+    <section class="container">
+            <header class="header">
+                <h1>My e-Book Library</h1>
+                <nav class="breadcrumb">
+                    <a href="/">Home</a> |
+                    <a href="/about">About</a> |
+                    <a class="bookLink" href="/bookcase">Bookcase (0)</a>
+                </nav>
+                    <h1>My Library</h1>
+            </header>
+
+            <header class="searchBar">
+                <form>
+                    <input type="text" placeholder="Enter name, author, keyword or genre..." name="search" value="">
+                    <input type="submit" value="Find">
+                    <br />
+                    <label>Time for your next good read</label>
+                </form>
+            </header>
+
+            <div id="list"></div>
+          
+    </section>
+    </main>
+<script src="index.js">
+  createListOfBooks()
+</script>
+
+</body>
+
+</html>
+
